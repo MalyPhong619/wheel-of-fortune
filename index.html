@@ -9,16 +9,19 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
       <h1>Word Puzzle</h1>
-      <form class="form-group">
-        <h2>Type the Answer</h2>
-        <input type="text" id="answer">
-        <button type="submit" class="btn-info">Create the Puzzle!</button>
-      </form>
-
-
-      <p id="newSentence"></p>
     </div>
-
-  </body>
+      <form class="form-group">
+      <h2>Type the Sentence!</h2>
+        <input type="text" id="answer">
+        <br>
+        <button type="submit" class="btn btn-info">Create the Puzzle!</button>
+      </form>
+      <div class="answer">
+      <p id="newSentence"></p>
+      <a href="index.html" class="btn btn-info">Refresh</a>
+    </div>
+  </div>
+</body>
 </html>

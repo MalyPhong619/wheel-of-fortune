@@ -2,3 +2,11 @@ button {
   display: block;
   margin-top: 10px;
 }
+#newSentence {
+  font-size: 30pt;
+  text-align: center;
+}
+.answer {
+  display: none;
+  text-align: center;
+}

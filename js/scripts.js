@@ -4,9 +4,8 @@ function replacingVowels(word){
       var newDamnWord = word[i].replace(/[aeiou]/gi, "-");
       replacedVowels.push(newDamnWord);
   }
-   return replacedVowels;
+   return replacedVowels.join("");
 };
-
 
 
 $(document).ready(function(){
@@ -16,8 +15,10 @@ $(document).ready(function(){
     var splitArray = sentence.split("");
 
     var hiddenVowels = replacingVowels(splitArray);
-    var joiningWords = hiddenVowels.join("");
 
-    $("#newSentence").text(joiningWords);
+
+    $("#newSentence").text(hiddenVowels);
+    $(".form-group").hide();
+    $(".answer").show();
   });
 });
